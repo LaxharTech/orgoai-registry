@@ -2,7 +2,7 @@
   "body": {
     "schema": 1,
     "appId": "orgochat",
-    "generatedAt": 1784322707140,
+    "generatedAt": 1784326893430,
     "ttlSeconds": 31536000,
     "packs": [
       {
@@ -334,9 +334,26 @@
             "sha256": "2f6c599545875e6d3bc8bf490b6754260b6641f3969cc7a20e42fbe5167cb5d1"
           }
         ]
+      },
+      {
+        "id": "text-desktop",
+        "version": "1.0.0",
+        "title": "Desktop text model",
+        "description": "A larger, higher-quality writing model for the desktop app (Qwen2.5-1.5B). Runs natively on your device.",
+        "runtime": "native",
+        "minRamMb": 6144,
+        "model": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+        "files": [
+          {
+            "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+            "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/main/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+            "bytes": 1117320736,
+            "sha256": "83cdad6fd849cb777fc77b8a6008607e247a74a0f9c5886ef4869293e10ffad3"
+          }
+        ]
       }
     ]
   },
-  "signature": "-Q-Abx2dZROAQZzPOC7biqJF9nSCFwPUXK9UMLfvSFuS6cR1JIzzXoRLA7bADSz6Cd_oK_q-ItKMM4BAsMAQBQ",
+  "signature": "ct5G0xbXKa0AR3xpMx3AP1G_-u6WQnORJaZwfXVpWmeDGfHQHrxSEiFIFuyp48Y-ZFKW5KBR1FYRifDUk-zrAA",
   "keyId": "orgoai-2026"
 }
