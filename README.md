@@ -18,7 +18,7 @@ repo only says which ones are blessed, and proves the list came from us.
 ## Re-signing
 
 The manifest carries a TTL. Once it lapses the catalog is treated as stale and quietly empties,
-so it must be re-signed before then. Current manifest expires **2027-07-17**.
+so it must be re-signed before then. Current manifest expires **2027-07-17** (pack 1.1.0).
 
 ```bash
 # Fetch the weights so they can be fingerprinted (not stored in this repo)

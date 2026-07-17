@@ -2,7 +2,7 @@
   "body": {
     "schema": 1,
     "appId": "orgochat",
-    "generatedAt": 1784326893430,
+    "generatedAt": 1784331315154,
     "ttlSeconds": 31536000,
     "packs": [
       {
@@ -351,9 +351,181 @@
             "sha256": "83cdad6fd849cb777fc77b8a6008607e247a74a0f9c5886ef4869293e10ffad3"
           }
         ]
+      },
+      {
+        "id": "vision",
+        "version": "1.0.0",
+        "title": "Image understanding",
+        "description": "Short on-device image descriptions (accessibility). Runs entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 4096,
+        "model": "Xenova/vit-gpt2-image-captioning",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/config.json",
+            "bytes": 4888,
+            "sha256": "b71725cabf08daad7461c53caa63492b49646b7079728e95803283adb1918375"
+          },
+          {
+            "name": "preprocessor_config.json",
+            "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/preprocessor_config.json",
+            "bytes": 378,
+            "sha256": "49c9db6ba2bca85343bfc0ce9c89f6db25d24b7c619f35fe138e0f3200ce7e49"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer.json",
+            "bytes": 2107928,
+            "sha256": "2f8f67b3b01f2c0287f16e52818aa96636eeb2105787e5ff3374198177a104b0"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer_config.json",
+            "bytes": 456,
+            "sha256": "7b11daab99178470575513f3755bed10d349f961b508e5a4605e7aaf08815e55"
+          },
+          {
+            "name": "generation_config.json",
+            "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/generation_config.json",
+            "bytes": 184,
+            "sha256": "8d9dc9c48a7805aafbce1c253cdb1df96e7087bc5f17902de82aa4eb012e5b82"
+          },
+          {
+            "name": "encoder_model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/onnx/encoder_model_quantized.onnx",
+            "bytes": 87453213,
+            "sha256": "9617548d9c4258914e277535aeda6b0ce7019b1d77a6ad5ea9cbd5c6e4470a78"
+          },
+          {
+            "name": "decoder_model_merged_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/onnx/decoder_model_merged_quantized.onnx",
+            "bytes": 158599996,
+            "sha256": "023d013388227d5ce52f102ab94cc1781fccbbdfaaf172e21f24905046e6f716"
+          }
+        ]
+      },
+      {
+        "id": "ocr-eng",
+        "version": "1.0.0",
+        "title": "Text recognition — English",
+        "description": "Read English text out of photos and scans, entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 1024,
+        "model": "tesseract/eng",
+        "files": [
+          {
+            "name": "eng.traineddata",
+            "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/eng.traineddata",
+            "bytes": 5199098,
+            "sha256": "2a524ec533fb770b5cc43bfb56ec041d4c9d8c8aba7204b4b39bdd9774215c6d"
+          }
+        ]
+      },
+      {
+        "id": "ocr-hin",
+        "version": "1.0.0",
+        "title": "Text recognition — Hindi",
+        "description": "Read Hindi text out of photos and scans, entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 1024,
+        "model": "tesseract/hin",
+        "files": [
+          {
+            "name": "hin.traineddata",
+            "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/hin.traineddata",
+            "bytes": 1651097,
+            "sha256": "2dc89426c88511934198dc57743bd23796a26ae166e5e800e93513916b74a0e0"
+          }
+        ]
+      },
+      {
+        "id": "ocr-ben",
+        "version": "1.0.0",
+        "title": "Text recognition — Bengali",
+        "description": "Read Bengali text out of photos and scans, entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 1024,
+        "model": "tesseract/ben",
+        "files": [
+          {
+            "name": "ben.traineddata",
+            "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/ben.traineddata",
+            "bytes": 1789844,
+            "sha256": "2f897ea1c498f64edae2011e1594e151ea547c19e5488ed30964b54061eb5fa4"
+          }
+        ]
+      },
+      {
+        "id": "ocr-tam",
+        "version": "1.0.0",
+        "title": "Text recognition — Tamil",
+        "description": "Read Tamil text out of photos and scans, entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 1024,
+        "model": "tesseract/tam",
+        "files": [
+          {
+            "name": "tam.traineddata",
+            "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/tam.traineddata",
+            "bytes": 3353494,
+            "sha256": "59dea6c14cf735936adc47a0aedb657e46bf7f81ea2b350ea2439c87c888613c"
+          }
+        ]
+      },
+      {
+        "id": "ocr-tel",
+        "version": "1.0.0",
+        "title": "Text recognition — Telugu",
+        "description": "Read Telugu text out of photos and scans, entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 1024,
+        "model": "tesseract/tel",
+        "files": [
+          {
+            "name": "tel.traineddata",
+            "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/tel.traineddata",
+            "bytes": 3315613,
+            "sha256": "a33213a6226edba2b84def02a8a3be11651549dc9717b520dad308c296369c0a"
+          }
+        ]
+      },
+      {
+        "id": "ocr-mar",
+        "version": "1.0.0",
+        "title": "Text recognition — Marathi",
+        "description": "Read Marathi text out of photos and scans, entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 1024,
+        "model": "tesseract/mar",
+        "files": [
+          {
+            "name": "mar.traineddata",
+            "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/mar.traineddata",
+            "bytes": 3193203,
+            "sha256": "8f82dcd168c51f8cbc853aeaa454d87707c653b567b774df81b9742bf88ff76c"
+          }
+        ]
+      },
+      {
+        "id": "ocr-guj",
+        "version": "1.0.0",
+        "title": "Text recognition — Gujarati",
+        "description": "Read Gujarati text out of photos and scans, entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 1024,
+        "model": "tesseract/guj",
+        "files": [
+          {
+            "name": "guj.traineddata",
+            "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/guj.traineddata",
+            "bytes": 1963204,
+            "sha256": "feb74543fd155bd68ebd604080dd1de221f6e670668dc2c24edd010fb2e8321c"
+          }
+        ]
       }
     ]
   },
-  "signature": "ct5G0xbXKa0AR3xpMx3AP1G_-u6WQnORJaZwfXVpWmeDGfHQHrxSEiFIFuyp48Y-ZFKW5KBR1FYRifDUk-zrAA",
+  "signature": "b07IRNmFK7wYAUvKVzju0q170fUnuuOOMdq1SFhXjn8Qkpu5581awoOsz8k4mA3poGp1mMXAKLgb5Aqu5zTfCg",
   "keyId": "orgoai-2026"
 }
