@@ -2,12 +2,32 @@
   "packs": [
     {
       "id": "core-text",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "title": "Core text",
       "description": "Writing assistant and smart replies. Runs entirely on your device.",
       "runtime": "wasm",
       "minRamMb": 2048,
       "files": [
+        {
+          "name": "config.json",
+          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/config.json",
+          "path": "./weights/config.json"
+        },
+        {
+          "name": "tokenizer.json",
+          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/tokenizer.json",
+          "path": "./weights/tokenizer.json"
+        },
+        {
+          "name": "tokenizer_config.json",
+          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/tokenizer_config.json",
+          "path": "./weights/tokenizer_config.json"
+        },
+        {
+          "name": "generation_config.json",
+          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/generation_config.json",
+          "path": "./weights/generation_config.json"
+        },
         {
           "name": "encoder_model_quantized.onnx",
           "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/onnx/encoder_model_quantized.onnx",

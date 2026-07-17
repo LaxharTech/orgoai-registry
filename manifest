@@ -2,17 +2,41 @@
   "body": {
     "schema": 1,
     "appId": "orgochat",
-    "generatedAt": 1784297061401,
+    "generatedAt": 1784307111514,
     "ttlSeconds": 31536000,
     "packs": [
       {
         "id": "core-text",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "title": "Core text",
         "description": "Writing assistant and smart replies. Runs entirely on your device.",
         "runtime": "wasm",
         "minRamMb": 2048,
         "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/config.json",
+            "bytes": 1537,
+            "sha256": "0d7bf6d62e50e6457ac12a159eb81f9d8e6f84cc06f55b73c6d9668924def2f6"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/tokenizer.json",
+            "bytes": 2422262,
+            "sha256": "c33c0ac0bab6140edc14bee9571fedb1a10e768e5f9f6f95ae3ddce45c9b4f6e"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/tokenizer_config.json",
+            "bytes": 2457,
+            "sha256": "40751e9b2c178b7aea1214003345a8a21f29946a817b987a56925883651ca766"
+          },
+          {
+            "name": "generation_config.json",
+            "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/generation_config.json",
+            "bytes": 147,
+            "sha256": "489e064f497b61ac030b1af4f0f45cacf7db412dc0b868764ba4e94a1875fb6f"
+          },
           {
             "name": "encoder_model_quantized.onnx",
             "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/onnx/encoder_model_quantized.onnx",
@@ -29,6 +53,6 @@
       }
     ]
   },
-  "signature": "YVqElnGS6o8y5Fnle_Zg1T1h2u855ke5buPkTxwSeUVpxvp24c1IsNhVXFHaZbW__XZGVedGI2UHV6S1XU6mAw",
+  "signature": "RvPOw-CUX_clxU-jKOkeEoU0mU5LOEdIuU9tAdX6LxeZfhgW_fBh2NapqAGBuml_IaJeUakywSTBzjhjcCOqAw",
   "keyId": "orgoai-2026"
 }
