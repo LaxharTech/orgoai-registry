@@ -2,42 +2,55 @@
   "packs": [
     {
       "id": "core-text",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "title": "Core text",
       "description": "Writing assistant and smart replies. Runs entirely on your device.",
       "runtime": "wasm",
       "minRamMb": 2048,
+      "model": "Xenova/LaMini-Flan-T5-77M",
       "files": [
-        {
-          "name": "config.json",
-          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/config.json",
-          "path": "./weights/config.json"
-        },
-        {
-          "name": "tokenizer.json",
-          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/tokenizer.json",
-          "path": "./weights/tokenizer.json"
-        },
-        {
-          "name": "tokenizer_config.json",
-          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/tokenizer_config.json",
-          "path": "./weights/tokenizer_config.json"
-        },
-        {
-          "name": "generation_config.json",
-          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/generation_config.json",
-          "path": "./weights/generation_config.json"
-        },
-        {
-          "name": "encoder_model_quantized.onnx",
-          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/onnx/encoder_model_quantized.onnx",
-          "path": "./weights/encoder_model_quantized.onnx"
-        },
-        {
-          "name": "decoder_model_merged_quantized.onnx",
-          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/onnx/decoder_model_merged_quantized.onnx",
-          "path": "./weights/decoder_model_merged_quantized.onnx"
-        }
+        { "name": "config.json", "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/config.json", "path": "./weights/config.json" },
+        { "name": "tokenizer.json", "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/tokenizer.json", "path": "./weights/tokenizer.json" },
+        { "name": "tokenizer_config.json", "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/tokenizer_config.json", "path": "./weights/tokenizer_config.json" },
+        { "name": "generation_config.json", "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/generation_config.json", "path": "./weights/generation_config.json" },
+        { "name": "encoder_model_quantized.onnx", "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/onnx/encoder_model_quantized.onnx", "path": "./weights/encoder_model_quantized.onnx" },
+        { "name": "decoder_model_merged_quantized.onnx", "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/onnx/decoder_model_merged_quantized.onnx", "path": "./weights/decoder_model_merged_quantized.onnx" }
+      ]
+    },
+    {
+      "id": "speech",
+      "version": "1.0.0",
+      "title": "Speech to text",
+      "description": "Transcribe voice notes on device (multilingual). Runs entirely on your device.",
+      "runtime": "wasm",
+      "minRamMb": 3072,
+      "model": "Xenova/whisper-base",
+      "files": [
+        { "name": "config.json", "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/config.json", "path": "./weights/whisper-base/config.json" },
+        { "name": "tokenizer.json", "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/tokenizer.json", "path": "./weights/whisper-base/tokenizer.json" },
+        { "name": "tokenizer_config.json", "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/tokenizer_config.json", "path": "./weights/whisper-base/tokenizer_config.json" },
+        { "name": "preprocessor_config.json", "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/preprocessor_config.json", "path": "./weights/whisper-base/preprocessor_config.json" },
+        { "name": "generation_config.json", "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/generation_config.json", "path": "./weights/whisper-base/generation_config.json" },
+        { "name": "encoder_model_quantized.onnx", "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/onnx/encoder_model_quantized.onnx", "path": "./weights/whisper-base/encoder_model_quantized.onnx" },
+        { "name": "decoder_model_merged_quantized.onnx", "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/onnx/decoder_model_merged_quantized.onnx", "path": "./weights/whisper-base/decoder_model_merged_quantized.onnx" }
+      ]
+    },
+    {
+      "id": "tts-en",
+      "version": "1.0.0",
+      "title": "Read aloud (English)",
+      "description": "Hear a message spoken, on device (English). Runs entirely on your device.",
+      "runtime": "wasm",
+      "minRamMb": 2048,
+      "model": "Xenova/mms-tts-eng",
+      "files": [
+        { "name": "config.json", "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/config.json", "path": "./weights/mms-tts-eng/config.json" },
+        { "name": "tokenizer.json", "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/tokenizer.json", "path": "./weights/mms-tts-eng/tokenizer.json" },
+        { "name": "tokenizer_config.json", "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/tokenizer_config.json", "path": "./weights/mms-tts-eng/tokenizer_config.json" },
+        { "name": "vocab.json", "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/vocab.json", "path": "./weights/mms-tts-eng/vocab.json" },
+        { "name": "special_tokens_map.json", "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/special_tokens_map.json", "path": "./weights/mms-tts-eng/special_tokens_map.json" },
+        { "name": "added_tokens.json", "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/added_tokens.json", "path": "./weights/mms-tts-eng/added_tokens.json" },
+        { "name": "model_quantized.onnx", "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/onnx/model_quantized.onnx", "path": "./weights/mms-tts-eng/model_quantized.onnx" }
       ]
     }
   ]

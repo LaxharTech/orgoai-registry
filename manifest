@@ -2,16 +2,17 @@
   "body": {
     "schema": 1,
     "appId": "orgochat",
-    "generatedAt": 1784307111514,
+    "generatedAt": 1784318038690,
     "ttlSeconds": 31536000,
     "packs": [
       {
         "id": "core-text",
-        "version": "1.1.0",
+        "version": "1.2.0",
         "title": "Core text",
         "description": "Writing assistant and smart replies. Runs entirely on your device.",
         "runtime": "wasm",
         "minRamMb": 2048,
+        "model": "Xenova/LaMini-Flan-T5-77M",
         "files": [
           {
             "name": "config.json",
@@ -50,9 +51,115 @@
             "sha256": "bee6285135afeb65b194601b94355b2d84bd8a9f2c5a23cac6c7ddafe6983a38"
           }
         ]
+      },
+      {
+        "id": "speech",
+        "version": "1.0.0",
+        "title": "Speech to text",
+        "description": "Transcribe voice notes on device (multilingual). Runs entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 3072,
+        "model": "Xenova/whisper-base",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/config.json",
+            "bytes": 2248,
+            "sha256": "67d8f6038a6d00d8fff5dc536666c5fd29cdb07b34f054bf829e66ef279ef36f"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/tokenizer.json",
+            "bytes": 2480466,
+            "sha256": "2c03294bf66b09198fb208ecb9da522d38b332248f315f835df5401a88bccfdd"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/tokenizer_config.json",
+            "bytes": 282683,
+            "sha256": "bafa49b0d052895d39390b2e8dd106729d39c04e3237edd263c84214a7edc841"
+          },
+          {
+            "name": "preprocessor_config.json",
+            "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/preprocessor_config.json",
+            "bytes": 339,
+            "sha256": "a03ee3825520946dd37cb6a7a003b965d1b6024e4fe4877db3c510ea95d6e0a0"
+          },
+          {
+            "name": "generation_config.json",
+            "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/generation_config.json",
+            "bytes": 3776,
+            "sha256": "e05ab0bba5f38c1d5f63b0d37fe1353ea12a507d1d973f618f0d3c3237a6c15d"
+          },
+          {
+            "name": "encoder_model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/onnx/encoder_model_quantized.onnx",
+            "bytes": 23200850,
+            "sha256": "1df9e7e8d58ba3df2b58c6e9aa58df388bb0dfb783937d8f75ff9386fa0b4a99"
+          },
+          {
+            "name": "decoder_model_merged_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/onnx/decoder_model_merged_quantized.onnx",
+            "bytes": 53707539,
+            "sha256": "b9f0d1fda4d69fdc5568b87bd4f6f6ffa66f16c8c2ec64de3dee62c4715fb439"
+          }
+        ]
+      },
+      {
+        "id": "tts-en",
+        "version": "1.0.0",
+        "title": "Read aloud (English)",
+        "description": "Hear a message spoken, on device (English). Runs entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 2048,
+        "model": "Xenova/mms-tts-eng",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/config.json",
+            "bytes": 1656,
+            "sha256": "5e9e7d12679a47e93af15aeb2b235e3604f2967dca8242ec75725434442c7824"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/tokenizer.json",
+            "bytes": 2107,
+            "sha256": "ad6614c664b37aa3bcdd0e2a4963f3a50c034b40e3d0db46327b1fb5b1694749"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/tokenizer_config.json",
+            "bytes": 623,
+            "sha256": "2b67a87a23aca04dc43254799881ef0e12d06b66f4f0a0ba6b264556adc2f491"
+          },
+          {
+            "name": "vocab.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/vocab.json",
+            "bytes": 413,
+            "sha256": "cb2a206ad823f474b0689961ddd68bfa38fa60611e4137cfc367f51216c570fb"
+          },
+          {
+            "name": "special_tokens_map.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/special_tokens_map.json",
+            "bytes": 47,
+            "sha256": "2925878f1e4459e69a68b78970003bd6cbdd4f77b6c4a85f113a49daba237a96"
+          },
+          {
+            "name": "added_tokens.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/added_tokens.json",
+            "bytes": 18,
+            "sha256": "aa4f68ab17a0c30139bb4598c7a7cb1f6674d51154e6c9f905c43574f50b8885"
+          },
+          {
+            "name": "model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/onnx/model_quantized.onnx",
+            "bytes": 38361643,
+            "sha256": "4951b84b1a9957e0b4f199210e4a0c6f4ab4cf021ac3788e6576c383c9333f6d"
+          }
+        ]
       }
     ]
   },
-  "signature": "RvPOw-CUX_clxU-jKOkeEoU0mU5LOEdIuU9tAdX6LxeZfhgW_fBh2NapqAGBuml_IaJeUakywSTBzjhjcCOqAw",
+  "signature": "r0zfwVi3uCQAvHi87CLTLIrm8ibU2evq9K4OQkAFuQLuTiRNKAd1AuPiGPUbFstn0n_iUKBWbhKUyyM9U5ENAg",
   "keyId": "orgoai-2026"
 }
