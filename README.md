@@ -18,7 +18,13 @@ repo only says which ones are blessed, and proves the list came from us.
 ## Re-signing
 
 The manifest carries a TTL. Once it lapses the catalog is treated as stale and quietly empties,
-so it must be re-signed before then. Current manifest expires **2027-07-17** (pack 1.1.0).
+so it must be re-signed before then. Current manifest expires **2027-07-17** (15 packs, OLAI.7).
+
+OCR language packs (`ocr-*`) are served from this repo's `tessdata/` directory (ungzipped
+`.traineddata`, ~2-5MB each; source: the tesseract.js data packages, `4.0.0_best_int`
+variant, gunzipped). Adding a language = drop the ungzipped file in `tessdata/`, add a
+pack entry, re-sign. All other weights stay on Hugging Face (fetched locally only to
+fingerprint).
 
 ```bash
 # Fetch the weights so they can be fingerprinted (not stored in this repo)
