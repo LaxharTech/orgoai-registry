@@ -1,0 +1,5 @@
+# The signing key. NEVER commit this.
+KEYS.txt
+# Local copies of the model weights — only needed to fingerprint them.
+# Users download from Hugging Face, not from this repo (90MB).
+weights/

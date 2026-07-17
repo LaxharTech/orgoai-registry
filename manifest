@@ -1,0 +1,34 @@
+{
+  "body": {
+    "schema": 1,
+    "appId": "orgochat",
+    "generatedAt": 1784297061401,
+    "ttlSeconds": 31536000,
+    "packs": [
+      {
+        "id": "core-text",
+        "version": "1.0.0",
+        "title": "Core text",
+        "description": "Writing assistant and smart replies. Runs entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 2048,
+        "files": [
+          {
+            "name": "encoder_model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/onnx/encoder_model_quantized.onnx",
+            "bytes": 35759128,
+            "sha256": "0239455518e19108a1dd3f1ab9e86929dd09235a42c51b06c00c8904708a11fc"
+          },
+          {
+            "name": "decoder_model_merged_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/onnx/decoder_model_merged_quantized.onnx",
+            "bytes": 59339330,
+            "sha256": "bee6285135afeb65b194601b94355b2d84bd8a9f2c5a23cac6c7ddafe6983a38"
+          }
+        ]
+      }
+    ]
+  },
+  "signature": "YVqElnGS6o8y5Fnle_Zg1T1h2u855ke5buPkTxwSeUVpxvp24c1IsNhVXFHaZbW__XZGVedGI2UHV6S1XU6mAw",
+  "keyId": "orgoai-2026"
+}
