@@ -1,12 +1,16 @@
 # OrgoAI model registry
 
-The signed catalog of on-device AI models for **OrgoChat**.
+The signed catalogs of on-device AI models for the Laxhar apps. One catalog per app,
+each signed with the same publisher key but bound to its app id (`--app`), so an app
+refuses every other app's manifest:
 
-`manifest` is the only file that matters. OrgoChat fetches it from:
+| App      | Catalog              | Fetched from                                                              |
+|----------|----------------------|---------------------------------------------------------------------------|
+| OrgoChat | `packs.json` (root)  | `https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/manifest` |
+| Swasth   | `swasth/packs.json`  | `.../main/swasth/manifest`                                                |
+| Kridax   | `kridax/packs.json`  | `.../main/kridax/manifest`                                                |
 
-```
-https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/manifest
-```
+Subdirectory catalogs reference the shared root `weights/` via `path: '../weights/...'`.
 
 It is an Ed25519-signed list of the models users are allowed to download. The signature is
 verified in the browser against `NEXT_PUBLIC_AI_SIGNING_PUBLIC_KEY`, fail-closed — a manifest
@@ -18,7 +22,9 @@ repo only says which ones are blessed, and proves the list came from us.
 ## Re-signing
 
 The manifest carries a TTL. Once it lapses the catalog is treated as stale and quietly empties,
-so it must be re-signed before then. Current manifest expires **2027-07-17** (15 packs, OLAI.7).
+so it must be re-signed before then. Current expiries: root (OrgoChat) **2027-07-17**;
+`swasth/manifest` **2027-07-17**; `kridax/manifest` **2027-07-18** (1 pack, KX.1). Re-sign each
+with its own `--app` id (`orgochat` / `swasth` / `kridax`).
 
 OCR language packs (`ocr-*`) are served from this repo's `tessdata/` directory (ungzipped
 `.traineddata`, ~2-5MB each; source: the tesseract.js data packages, `4.0.0_best_int`

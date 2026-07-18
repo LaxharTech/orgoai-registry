@@ -1,0 +1,45 @@
+{
+  "packs": [
+    {
+      "id": "core-text",
+      "version": "1.2.0",
+      "title": "Core text",
+      "description": "Writing help and review summaries. Runs entirely on your device.",
+      "runtime": "wasm",
+      "minRamMb": 2048,
+      "model": "Xenova/LaMini-Flan-T5-77M",
+      "files": [
+        {
+          "name": "config.json",
+          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/config.json",
+          "path": "../weights/config.json"
+        },
+        {
+          "name": "tokenizer.json",
+          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/tokenizer.json",
+          "path": "../weights/tokenizer.json"
+        },
+        {
+          "name": "tokenizer_config.json",
+          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/tokenizer_config.json",
+          "path": "../weights/tokenizer_config.json"
+        },
+        {
+          "name": "generation_config.json",
+          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/generation_config.json",
+          "path": "../weights/generation_config.json"
+        },
+        {
+          "name": "encoder_model_quantized.onnx",
+          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/onnx/encoder_model_quantized.onnx",
+          "path": "../weights/encoder_model_quantized.onnx"
+        },
+        {
+          "name": "decoder_model_merged_quantized.onnx",
+          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/onnx/decoder_model_merged_quantized.onnx",
+          "path": "../weights/decoder_model_merged_quantized.onnx"
+        }
+      ]
+    }
+  ]
+}
