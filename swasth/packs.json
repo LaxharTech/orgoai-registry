@@ -134,6 +134,52 @@
       ]
     },
     {
+      "id": "tts-hin",
+      "version": "1.0.0",
+      "title": "Read aloud (Hindi)",
+      "description": "Hear text spoken in Hindi, on device. Runs entirely on your device.",
+      "runtime": "wasm",
+      "minRamMb": 2048,
+      "model": "Xenova/mms-tts-hin",
+      "files": [
+        {
+          "name": "config.json",
+          "url": "https://huggingface.co/Xenova/mms-tts-hin/resolve/main/config.json",
+          "path": "../weights/mms-tts-hin/config.json"
+        },
+        {
+          "name": "tokenizer.json",
+          "url": "https://huggingface.co/Xenova/mms-tts-hin/resolve/main/tokenizer.json",
+          "path": "../weights/mms-tts-hin/tokenizer.json"
+        },
+        {
+          "name": "tokenizer_config.json",
+          "url": "https://huggingface.co/Xenova/mms-tts-hin/resolve/main/tokenizer_config.json",
+          "path": "../weights/mms-tts-hin/tokenizer_config.json"
+        },
+        {
+          "name": "vocab.json",
+          "url": "https://huggingface.co/Xenova/mms-tts-hin/resolve/main/vocab.json",
+          "path": "../weights/mms-tts-hin/vocab.json"
+        },
+        {
+          "name": "special_tokens_map.json",
+          "url": "https://huggingface.co/Xenova/mms-tts-hin/resolve/main/special_tokens_map.json",
+          "path": "../weights/mms-tts-hin/special_tokens_map.json"
+        },
+        {
+          "name": "added_tokens.json",
+          "url": "https://huggingface.co/Xenova/mms-tts-hin/resolve/main/added_tokens.json",
+          "path": "../weights/mms-tts-hin/added_tokens.json"
+        },
+        {
+          "name": "model_quantized.onnx",
+          "url": "https://huggingface.co/Xenova/mms-tts-hin/resolve/main/onnx/model_quantized.onnx",
+          "path": "../weights/mms-tts-hin/model_quantized.onnx"
+        }
+      ]
+    },
+    {
       "id": "translate-mul-en",
       "version": "1.0.0",
       "title": "Translate: any \u2192 English",
