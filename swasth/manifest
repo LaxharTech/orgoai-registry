@@ -2,7 +2,7 @@
   "body": {
     "schema": 1,
     "appId": "swasth",
-    "generatedAt": 1784380529247,
+    "generatedAt": 1784383704313,
     "ttlSeconds": 31536000,
     "packs": [
       {
@@ -653,9 +653,26 @@
             "sha256": "a7f04b7082d8cbf7303d6ac6707b401aa891080fd9dd6ff2eb5e7f3d6939ad9b"
           }
         ]
+      },
+      {
+        "id": "text-desktop",
+        "version": "1.0.0",
+        "title": "Desktop text model",
+        "description": "A larger, higher-quality writing model for the desktop app (Qwen2.5-1.5B). Runs natively on your device.",
+        "runtime": "native",
+        "minRamMb": 6144,
+        "model": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+        "files": [
+          {
+            "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+            "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/main/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+            "bytes": 1117320736,
+            "sha256": "83cdad6fd849cb777fc77b8a6008607e247a74a0f9c5886ef4869293e10ffad3"
+          }
+        ]
       }
     ]
   },
-  "signature": "HKi8S8AFmId55E9oSxb0v_JzfvVY93vuOdW8tuhEEHyPD8rFJTqNFT-5uHn5xT2Saf73kZ__3egPu202_647BQ",
+  "signature": "EOsWS3XaYR-M452_x7WaynOyLQkzISOvp4lad-6kUe0B3H4aKfc2xJKPTIOR-dxwlUS41aH-oXVIijir4epXDg",
   "keyId": "orgoai-2026"
 }
