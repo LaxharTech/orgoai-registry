@@ -2,7 +2,7 @@
   "body": {
     "schema": 1,
     "appId": "orgochat",
-    "generatedAt": 1784331315154,
+    "generatedAt": 1784333131554,
     "ttlSeconds": 31536000,
     "packs": [
       {
@@ -523,9 +523,56 @@
             "sha256": "feb74543fd155bd68ebd604080dd1de221f6e670668dc2c24edd010fb2e8321c"
           }
         ]
+      },
+      {
+        "id": "classify",
+        "version": "1.0.0",
+        "title": "Smart classification",
+        "description": "Better label suggestions and spam detection. Runs entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 2048,
+        "model": "Xenova/distilbert-base-uncased-mnli",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/config.json",
+            "bytes": 753,
+            "sha256": "56da382081e4685a67c46724b857be63ecc8aab9cb13804773ee524ff63c1682"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/tokenizer.json",
+            "bytes": 711396,
+            "sha256": "415bb076b9167233bff3c6108c22b25c1a01e17ed79b920214b9f8b3d67321c7"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/tokenizer_config.json",
+            "bytes": 372,
+            "sha256": "04c20c4691aaf4ebbe62df486f01f5de233583a969dac30c50e7eb7f3134e81b"
+          },
+          {
+            "name": "vocab.txt",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/vocab.txt",
+            "bytes": 231508,
+            "sha256": "0d26b6769eeb4cb3158099cdb430d085a877dd7f254f44828d6617131e7bebcd"
+          },
+          {
+            "name": "special_tokens_map.json",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/special_tokens_map.json",
+            "bytes": 125,
+            "sha256": "0e84ec2a99f0965e6d0a32aebc99cd4c75f6d8e051d80d00cb18fe582ecda128"
+          },
+          {
+            "name": "model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/onnx/model_quantized.onnx",
+            "bytes": 67581975,
+            "sha256": "142c521d46d5f42045a2f855fbc8e6a650bd452f0afc6237ba0072d6b7afbc8a"
+          }
+        ]
       }
     ]
   },
-  "signature": "b07IRNmFK7wYAUvKVzju0q170fUnuuOOMdq1SFhXjn8Qkpu5581awoOsz8k4mA3poGp1mMXAKLgb5Aqu5zTfCg",
+  "signature": "g0mkM49ugrPmnvt9ervNTfBFwkELGzYQhh6deqhlaEtf5LHB1gwQ_K7JJn4sp2o5gS_NQtxTiTBVEQXf_9GqDQ",
   "keyId": "orgoai-2026"
 }

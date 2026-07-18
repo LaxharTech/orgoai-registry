@@ -459,6 +459,47 @@
           "path": "./tessdata/guj.traineddata"
         }
       ]
+    },
+    {
+      "id": "classify",
+      "version": "1.0.0",
+      "title": "Smart classification",
+      "description": "Better label suggestions and spam detection. Runs entirely on your device.",
+      "runtime": "wasm",
+      "minRamMb": 2048,
+      "model": "Xenova/distilbert-base-uncased-mnli",
+      "files": [
+        {
+          "name": "config.json",
+          "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/config.json",
+          "path": "./weights/distilbert-mnli/config.json"
+        },
+        {
+          "name": "tokenizer.json",
+          "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/tokenizer.json",
+          "path": "./weights/distilbert-mnli/tokenizer.json"
+        },
+        {
+          "name": "tokenizer_config.json",
+          "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/tokenizer_config.json",
+          "path": "./weights/distilbert-mnli/tokenizer_config.json"
+        },
+        {
+          "name": "vocab.txt",
+          "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/vocab.txt",
+          "path": "./weights/distilbert-mnli/vocab.txt"
+        },
+        {
+          "name": "special_tokens_map.json",
+          "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/special_tokens_map.json",
+          "path": "./weights/distilbert-mnli/special_tokens_map.json"
+        },
+        {
+          "name": "model_quantized.onnx",
+          "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/onnx/model_quantized.onnx",
+          "path": "./weights/distilbert-mnli/onnx/model_quantized.onnx"
+        }
+      ]
     }
   ]
 }
