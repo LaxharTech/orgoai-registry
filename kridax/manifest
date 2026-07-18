@@ -2,7 +2,7 @@
   "body": {
     "schema": 1,
     "appId": "kridax",
-    "generatedAt": 1784397167695,
+    "generatedAt": 1784400506546,
     "ttlSeconds": 31536000,
     "packs": [
       {
@@ -98,9 +98,233 @@
             "sha256": "a7f04b7082d8cbf7303d6ac6707b401aa891080fd9dd6ff2eb5e7f3d6939ad9b"
           }
         ]
+      },
+      {
+        "id": "translate-mul-en",
+        "version": "1.0.0",
+        "title": "Translate: any → English",
+        "description": "Translate messages from many languages into English, on device.",
+        "runtime": "wasm",
+        "minRamMb": 2048,
+        "model": "Xenova/opus-mt-mul-en",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/config.json",
+            "bytes": 1390,
+            "sha256": "8291285235226a7006e59cc343d15bc09b2d32f47f89da3c4e4ab935722cf660"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/tokenizer.json",
+            "bytes": 6089424,
+            "sha256": "5d108f3f6f0c51954432edb478f4c493fb3524adaa2c1e8a5c8c9a1f6b1ec7ff"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/tokenizer_config.json",
+            "bytes": 282,
+            "sha256": "829b813895861e8c28bad1066934eb5bac616db4fb64ba299551476d289f919e"
+          },
+          {
+            "name": "generation_config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/generation_config.json",
+            "bytes": 293,
+            "sha256": "fca98551a13f1337f71df7200e6ee6937550700de1e4853c4173132f4adccf7e"
+          },
+          {
+            "name": "vocab.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/vocab.json",
+            "bytes": 1552293,
+            "sha256": "3d34059a8671708d13bedebf67d12338e969dda68e927588950676de33a613fb"
+          },
+          {
+            "name": "special_tokens_map.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/special_tokens_map.json",
+            "bytes": 74,
+            "sha256": "61ee1e4c0e92f5b27d41fa66ceef05b16b4afafb34c550dffbf3e26354c076a7"
+          },
+          {
+            "name": "encoder_model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/onnx/encoder_model_quantized.onnx",
+            "bytes": 52475294,
+            "sha256": "48c3cad6c7664fd5d9ebe52a2d5d394ef2adeefbbf439c53f600b901cb974aed"
+          },
+          {
+            "name": "decoder_model_merged_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/onnx/decoder_model_merged_quantized.onnx",
+            "bytes": 59785040,
+            "sha256": "0f13e53175cf87f10f3ab0c271e4dbfd73d281fc4306f9401892f5033f28e9ea"
+          }
+        ]
+      },
+      {
+        "id": "translate-en-hi",
+        "version": "1.0.0",
+        "title": "Translate: English → Hindi",
+        "description": "Translate your English messages into Hindi, on device.",
+        "runtime": "wasm",
+        "minRamMb": 2048,
+        "model": "Xenova/opus-mt-en-hi",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/config.json",
+            "bytes": 1389,
+            "sha256": "6d29d4ec94db8a9d872e6bd8b978d14d5164d81a48e75afe8bb6aa105093d38c"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/tokenizer.json",
+            "bytes": 6679560,
+            "sha256": "fdc33f73c560bd84f9dfcb1e8638e15b5c0b482b9f8c45d9b59917591fc970a8"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/tokenizer_config.json",
+            "bytes": 282,
+            "sha256": "f408731a3da7b6c819b7c41603e1be9b5926fec4eb885d31fcd721a2090f71b0"
+          },
+          {
+            "name": "generation_config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/generation_config.json",
+            "bytes": 293,
+            "sha256": "d770a432d949500a61ebc6b081c2a9f9be7a247c954b5e7632733e82a5d10f7b"
+          },
+          {
+            "name": "vocab.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/vocab.json",
+            "bytes": 2221738,
+            "sha256": "d0905d1c4d54cf91d1c44612e80db300c56cf66aa0165a860d7f2ab28edaa829"
+          },
+          {
+            "name": "special_tokens_map.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/special_tokens_map.json",
+            "bytes": 74,
+            "sha256": "61ee1e4c0e92f5b27d41fa66ceef05b16b4afafb34c550dffbf3e26354c076a7"
+          },
+          {
+            "name": "encoder_model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/onnx/encoder_model_quantized.onnx",
+            "bytes": 51337630,
+            "sha256": "53645fde96de098a58982d13f29ea24252a33ae4e9a10c7f84a2cceab4a2593e"
+          },
+          {
+            "name": "decoder_model_merged_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/onnx/decoder_model_merged_quantized.onnx",
+            "bytes": 58638488,
+            "sha256": "79fc3eabceb473b13db2b6e25e7ebe7b4669526608a82147de4248f8c7e82e71"
+          }
+        ]
+      },
+      {
+        "id": "translate-en-es",
+        "version": "1.0.0",
+        "title": "Translate: English → Spanish",
+        "description": "Translate your English messages into Spanish, on device.",
+        "runtime": "wasm",
+        "minRamMb": 2048,
+        "model": "Xenova/opus-mt-en-es",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/config.json",
+            "bytes": 1468,
+            "sha256": "40b5f1a4942646df15237edd946ec70fafaaf5e2c129f414c3072e82e6184595"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/tokenizer.json",
+            "bytes": 6262682,
+            "sha256": "b802aaefad8865eed94f3c71182856128ca0e485680045cf4819d402ac74053c"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/tokenizer_config.json",
+            "bytes": 282,
+            "sha256": "743056968462e52dc9bc659b0fc6db3f37cf06da18a2b80525307500c867f70a"
+          },
+          {
+            "name": "generation_config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/generation_config.json",
+            "bytes": 293,
+            "sha256": "60ddd81a85bbad24ef0541ef68e586b56c70aa2982ecb0d0731a53b23f9790ca"
+          },
+          {
+            "name": "vocab.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/vocab.json",
+            "bytes": 1720044,
+            "sha256": "aa3217e243dce8bcde26dbc222d966837ac35ce091677e9e1e109f4b42f269df"
+          },
+          {
+            "name": "special_tokens_map.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/special_tokens_map.json",
+            "bytes": 74,
+            "sha256": "61ee1e4c0e92f5b27d41fa66ceef05b16b4afafb34c550dffbf3e26354c076a7"
+          },
+          {
+            "name": "encoder_model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/onnx/encoder_model_quantized.onnx",
+            "bytes": 52899742,
+            "sha256": "8a60b02899b230c32411b4d87802fd27911b37690533b64bc31e2a1442368b49"
+          },
+          {
+            "name": "decoder_model_merged_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/onnx/decoder_model_merged_quantized.onnx",
+            "bytes": 60212804,
+            "sha256": "2f6c599545875e6d3bc8bf490b6754260b6641f3969cc7a20e42fbe5167cb5d1"
+          }
+        ]
+      },
+      {
+        "id": "classify",
+        "version": "1.0.0",
+        "title": "Smart classification",
+        "description": "Powers the new chat caution signal. Runs entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 2048,
+        "model": "Xenova/distilbert-base-uncased-mnli",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/config.json",
+            "bytes": 753,
+            "sha256": "56da382081e4685a67c46724b857be63ecc8aab9cb13804773ee524ff63c1682"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/tokenizer.json",
+            "bytes": 711396,
+            "sha256": "415bb076b9167233bff3c6108c22b25c1a01e17ed79b920214b9f8b3d67321c7"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/tokenizer_config.json",
+            "bytes": 372,
+            "sha256": "04c20c4691aaf4ebbe62df486f01f5de233583a969dac30c50e7eb7f3134e81b"
+          },
+          {
+            "name": "vocab.txt",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/vocab.txt",
+            "bytes": 231508,
+            "sha256": "0d26b6769eeb4cb3158099cdb430d085a877dd7f254f44828d6617131e7bebcd"
+          },
+          {
+            "name": "special_tokens_map.json",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/special_tokens_map.json",
+            "bytes": 125,
+            "sha256": "0e84ec2a99f0965e6d0a32aebc99cd4c75f6d8e051d80d00cb18fe582ecda128"
+          },
+          {
+            "name": "model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/onnx/model_quantized.onnx",
+            "bytes": 67581975,
+            "sha256": "142c521d46d5f42045a2f855fbc8e6a650bd452f0afc6237ba0072d6b7afbc8a"
+          }
+        ]
       }
     ]
   },
-  "signature": "37Fz4Xk_AgzpR0H9At0DlAbI1OzYtPdEdKpS5WGeb-Q1Q7LT3pRvKa6iLyqjZEsgSH3iGT3RZhZrQWflqW6eCw",
+  "signature": "gFN2l2_i72yBcEhB3HUh_WO350m5SZ-5tH4mJgt-8BbJuujNaem7YudgS37U7LMurYh1OKLvU3SwdNuWqjIUCw",
   "keyId": "orgoai-2026"
 }
