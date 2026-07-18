@@ -2,7 +2,7 @@
   "body": {
     "schema": 1,
     "appId": "swasth",
-    "generatedAt": 1784343098248,
+    "generatedAt": 1784380529247,
     "ttlSeconds": 31536000,
     "packs": [
       {
@@ -155,6 +155,59 @@
             "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/onnx/model_quantized.onnx",
             "bytes": 38361643,
             "sha256": "4951b84b1a9957e0b4f199210e4a0c6f4ab4cf021ac3788e6576c383c9333f6d"
+          }
+        ]
+      },
+      {
+        "id": "tts-hin",
+        "version": "1.0.0",
+        "title": "Read aloud (Hindi)",
+        "description": "Hear text spoken in Hindi, on device. Runs entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 2048,
+        "model": "Xenova/mms-tts-hin",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-hin/resolve/main/config.json",
+            "bytes": 1656,
+            "sha256": "75b5ac58ff1b4efcef0156009ee41562c19a8b6f467b742f97bc6619d38dfa3c"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-hin/resolve/main/tokenizer.json",
+            "bytes": 3460,
+            "sha256": "6201b7d413f217a895945f68316c14830768d6fdfb24b54a82066541f5be8af2"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-hin/resolve/main/tokenizer_config.json",
+            "bytes": 654,
+            "sha256": "33b6852557a22913f80e1f60ea11543571d5838eee6a8053d372619e2620b64e"
+          },
+          {
+            "name": "vocab.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-hin/resolve/main/vocab.json",
+            "bytes": 907,
+            "sha256": "3e7cf9aad629db11ac424fbd4e4d2215c9f19ea5f4c7f2b8c8696aa89b90a28b"
+          },
+          {
+            "name": "special_tokens_map.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-hin/resolve/main/special_tokens_map.json",
+            "bytes": 49,
+            "sha256": "033b4fdaa3899a6d1a1b0d56b5e0aca68686c826148e22659881871e715290ae"
+          },
+          {
+            "name": "added_tokens.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-hin/resolve/main/added_tokens.json",
+            "bytes": 18,
+            "sha256": "feb24d4f39cbdde745172b6ec7f529ff86545977e1c8898239ae3385be5c055e"
+          },
+          {
+            "name": "model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/mms-tts-hin/resolve/main/onnx/model_quantized.onnx",
+            "bytes": 38368171,
+            "sha256": "65b7e8f56c83b1644599571ceb99f354547fc3b7d32058c25a3e11125ad8f7e2"
           }
         ]
       },
@@ -603,6 +656,6 @@
       }
     ]
   },
-  "signature": "ujTud2LyM9ypyfzW0AWXwFGUZgJBzKRuYjIAv1PhIv_dwbK1w5TlSJVJAUfDihzvufg2pOsMV704DgBRQQS5AA",
+  "signature": "HKi8S8AFmId55E9oSxb0v_JzfvVY93vuOdW8tuhEEHyPD8rFJTqNFT-5uHn5xT2Saf73kZ__3egPu202_647BQ",
   "keyId": "orgoai-2026"
 }
