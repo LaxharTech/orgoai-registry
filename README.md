@@ -23,7 +23,7 @@ repo only says which ones are blessed, and proves the list came from us.
 
 The manifest carries a TTL. Once it lapses the catalog is treated as stale and quietly empties,
 so it must be re-signed before then. Current expiries: root (OrgoChat) **2027-07-17**;
-`swasth/manifest` **2027-07-17**; `kridax/manifest` **2027-07-19** (6 packs, KX.3; MT + classify minRamMb lowered to 2048 in this catalog only). Re-sign each
+`swasth/manifest` **2027-07-17**; `kridax/manifest` **2027-07-19** (14 packs, KX.4; MT + classify minRamMb lowered to 2048 in this catalog only). Re-sign each
 with its own `--app` id (`orgochat` / `swasth` / `kridax`).
 
 OCR language packs (`ocr-*`) are served from this repo's `tessdata/` directory (ungzipped
