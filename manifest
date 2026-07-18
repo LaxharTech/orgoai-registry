@@ -2,7 +2,7 @@
   "body": {
     "schema": 1,
     "appId": "orgochat",
-    "generatedAt": 1784333131554,
+    "generatedAt": 1784336879336,
     "ttlSeconds": 31536000,
     "packs": [
       {
@@ -570,9 +570,56 @@
             "sha256": "142c521d46d5f42045a2f855fbc8e6a650bd452f0afc6237ba0072d6b7afbc8a"
           }
         ]
+      },
+      {
+        "id": "embeddings",
+        "version": "1.0.0",
+        "title": "Search by meaning",
+        "description": "Semantic search and the memory assistant. Builds a sealed on-device index; nothing leaves your device.",
+        "runtime": "wasm",
+        "minRamMb": 1024,
+        "model": "Xenova/all-MiniLM-L6-v2",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/config.json",
+            "bytes": 650,
+            "sha256": "3249c53fe00e1737ce8139ed5c5fa1a2beeab9ff64e06300100aa9b6f8ceb914"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/tokenizer.json",
+            "bytes": 711661,
+            "sha256": "86b112241e2d008d089603e22ef8215df16500acebbf404def92d068b7d4943a"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json",
+            "bytes": 366,
+            "sha256": "573ba8e4917b362375d2449275b9f8bc1aafd0012f0dbf5d6a4261b4d157d643"
+          },
+          {
+            "name": "vocab.txt",
+            "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/vocab.txt",
+            "bytes": 231508,
+            "sha256": "0d26b6769eeb4cb3158099cdb430d085a877dd7f254f44828d6617131e7bebcd"
+          },
+          {
+            "name": "special_tokens_map.json",
+            "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/special_tokens_map.json",
+            "bytes": 125,
+            "sha256": "0e84ec2a99f0965e6d0a32aebc99cd4c75f6d8e051d80d00cb18fe582ecda128"
+          },
+          {
+            "name": "model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/onnx/model_quantized.onnx",
+            "bytes": 22972370,
+            "sha256": "a7f04b7082d8cbf7303d6ac6707b401aa891080fd9dd6ff2eb5e7f3d6939ad9b"
+          }
+        ]
       }
     ]
   },
-  "signature": "g0mkM49ugrPmnvt9ervNTfBFwkELGzYQhh6deqhlaEtf5LHB1gwQ_K7JJn4sp2o5gS_NQtxTiTBVEQXf_9GqDQ",
+  "signature": "ScS2m5WQ6ahIzPPvQQzw63Bz3uzPQ6RC6MZ35CIJVrRyiCa5kT1iVHQnHWkGUu1AfiUAUDjOY-bMFGKVYMtwAw",
   "keyId": "orgoai-2026"
 }

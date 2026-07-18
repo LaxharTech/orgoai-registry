@@ -500,6 +500,47 @@
           "path": "./weights/distilbert-mnli/onnx/model_quantized.onnx"
         }
       ]
+    },
+    {
+      "id": "embeddings",
+      "version": "1.0.0",
+      "title": "Search by meaning",
+      "description": "Semantic search and the memory assistant. Builds a sealed on-device index; nothing leaves your device.",
+      "runtime": "wasm",
+      "minRamMb": 1024,
+      "model": "Xenova/all-MiniLM-L6-v2",
+      "files": [
+        {
+          "name": "config.json",
+          "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/config.json",
+          "path": "./weights/all-minilm-l6-v2/config.json"
+        },
+        {
+          "name": "tokenizer.json",
+          "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/tokenizer.json",
+          "path": "./weights/all-minilm-l6-v2/tokenizer.json"
+        },
+        {
+          "name": "tokenizer_config.json",
+          "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json",
+          "path": "./weights/all-minilm-l6-v2/tokenizer_config.json"
+        },
+        {
+          "name": "vocab.txt",
+          "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/vocab.txt",
+          "path": "./weights/all-minilm-l6-v2/vocab.txt"
+        },
+        {
+          "name": "special_tokens_map.json",
+          "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/special_tokens_map.json",
+          "path": "./weights/all-minilm-l6-v2/special_tokens_map.json"
+        },
+        {
+          "name": "model_quantized.onnx",
+          "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/onnx/model_quantized.onnx",
+          "path": "./weights/all-minilm-l6-v2/onnx/model_quantized.onnx"
+        }
+      ]
     }
   ]
 }
