@@ -12,32 +12,32 @@
         {
           "name": "config.json",
           "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/config.json",
-          "path": "./weights/config.json"
+          "path": "../weights/config.json"
         },
         {
           "name": "tokenizer.json",
           "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/tokenizer.json",
-          "path": "./weights/tokenizer.json"
+          "path": "../weights/tokenizer.json"
         },
         {
           "name": "tokenizer_config.json",
           "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/tokenizer_config.json",
-          "path": "./weights/tokenizer_config.json"
+          "path": "../weights/tokenizer_config.json"
         },
         {
           "name": "generation_config.json",
           "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/generation_config.json",
-          "path": "./weights/generation_config.json"
+          "path": "../weights/generation_config.json"
         },
         {
           "name": "encoder_model_quantized.onnx",
           "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/onnx/encoder_model_quantized.onnx",
-          "path": "./weights/encoder_model_quantized.onnx"
+          "path": "../weights/encoder_model_quantized.onnx"
         },
         {
           "name": "decoder_model_merged_quantized.onnx",
           "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/onnx/decoder_model_merged_quantized.onnx",
-          "path": "./weights/decoder_model_merged_quantized.onnx"
+          "path": "../weights/decoder_model_merged_quantized.onnx"
         }
       ]
     },
@@ -53,37 +53,37 @@
         {
           "name": "config.json",
           "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/config.json",
-          "path": "./weights/whisper-base/config.json"
+          "path": "../weights/whisper-base/config.json"
         },
         {
           "name": "tokenizer.json",
           "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/tokenizer.json",
-          "path": "./weights/whisper-base/tokenizer.json"
+          "path": "../weights/whisper-base/tokenizer.json"
         },
         {
           "name": "tokenizer_config.json",
           "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/tokenizer_config.json",
-          "path": "./weights/whisper-base/tokenizer_config.json"
+          "path": "../weights/whisper-base/tokenizer_config.json"
         },
         {
           "name": "preprocessor_config.json",
           "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/preprocessor_config.json",
-          "path": "./weights/whisper-base/preprocessor_config.json"
+          "path": "../weights/whisper-base/preprocessor_config.json"
         },
         {
           "name": "generation_config.json",
           "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/generation_config.json",
-          "path": "./weights/whisper-base/generation_config.json"
+          "path": "../weights/whisper-base/generation_config.json"
         },
         {
           "name": "encoder_model_quantized.onnx",
           "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/onnx/encoder_model_quantized.onnx",
-          "path": "./weights/whisper-base/encoder_model_quantized.onnx"
+          "path": "../weights/whisper-base/encoder_model_quantized.onnx"
         },
         {
           "name": "decoder_model_merged_quantized.onnx",
           "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/onnx/decoder_model_merged_quantized.onnx",
-          "path": "./weights/whisper-base/decoder_model_merged_quantized.onnx"
+          "path": "../weights/whisper-base/decoder_model_merged_quantized.onnx"
         }
       ]
     },
@@ -99,37 +99,37 @@
         {
           "name": "config.json",
           "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/config.json",
-          "path": "./weights/mms-tts-eng/config.json"
+          "path": "../weights/mms-tts-eng/config.json"
         },
         {
           "name": "tokenizer.json",
           "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/tokenizer.json",
-          "path": "./weights/mms-tts-eng/tokenizer.json"
+          "path": "../weights/mms-tts-eng/tokenizer.json"
         },
         {
           "name": "tokenizer_config.json",
           "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/tokenizer_config.json",
-          "path": "./weights/mms-tts-eng/tokenizer_config.json"
+          "path": "../weights/mms-tts-eng/tokenizer_config.json"
         },
         {
           "name": "vocab.json",
           "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/vocab.json",
-          "path": "./weights/mms-tts-eng/vocab.json"
+          "path": "../weights/mms-tts-eng/vocab.json"
         },
         {
           "name": "special_tokens_map.json",
           "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/special_tokens_map.json",
-          "path": "./weights/mms-tts-eng/special_tokens_map.json"
+          "path": "../weights/mms-tts-eng/special_tokens_map.json"
         },
         {
           "name": "added_tokens.json",
           "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/added_tokens.json",
-          "path": "./weights/mms-tts-eng/added_tokens.json"
+          "path": "../weights/mms-tts-eng/added_tokens.json"
         },
         {
           "name": "model_quantized.onnx",
           "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/onnx/model_quantized.onnx",
-          "path": "./weights/mms-tts-eng/model_quantized.onnx"
+          "path": "../weights/mms-tts-eng/model_quantized.onnx"
         }
       ]
     },
@@ -145,42 +145,42 @@
         {
           "name": "config.json",
           "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/config.json",
-          "path": "./weights/opus-mt-mul-en/config.json"
+          "path": "../weights/opus-mt-mul-en/config.json"
         },
         {
           "name": "tokenizer.json",
           "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/tokenizer.json",
-          "path": "./weights/opus-mt-mul-en/tokenizer.json"
+          "path": "../weights/opus-mt-mul-en/tokenizer.json"
         },
         {
           "name": "tokenizer_config.json",
           "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/tokenizer_config.json",
-          "path": "./weights/opus-mt-mul-en/tokenizer_config.json"
+          "path": "../weights/opus-mt-mul-en/tokenizer_config.json"
         },
         {
           "name": "generation_config.json",
           "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/generation_config.json",
-          "path": "./weights/opus-mt-mul-en/generation_config.json"
+          "path": "../weights/opus-mt-mul-en/generation_config.json"
         },
         {
           "name": "vocab.json",
           "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/vocab.json",
-          "path": "./weights/opus-mt-mul-en/vocab.json"
+          "path": "../weights/opus-mt-mul-en/vocab.json"
         },
         {
           "name": "special_tokens_map.json",
           "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/special_tokens_map.json",
-          "path": "./weights/opus-mt-mul-en/special_tokens_map.json"
+          "path": "../weights/opus-mt-mul-en/special_tokens_map.json"
         },
         {
           "name": "encoder_model_quantized.onnx",
           "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/onnx/encoder_model_quantized.onnx",
-          "path": "./weights/opus-mt-mul-en/encoder_model_quantized.onnx"
+          "path": "../weights/opus-mt-mul-en/encoder_model_quantized.onnx"
         },
         {
           "name": "decoder_model_merged_quantized.onnx",
           "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/onnx/decoder_model_merged_quantized.onnx",
-          "path": "./weights/opus-mt-mul-en/decoder_model_merged_quantized.onnx"
+          "path": "../weights/opus-mt-mul-en/decoder_model_merged_quantized.onnx"
         }
       ]
     },
@@ -196,42 +196,42 @@
         {
           "name": "config.json",
           "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/config.json",
-          "path": "./weights/opus-mt-en-hi/config.json"
+          "path": "../weights/opus-mt-en-hi/config.json"
         },
         {
           "name": "tokenizer.json",
           "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/tokenizer.json",
-          "path": "./weights/opus-mt-en-hi/tokenizer.json"
+          "path": "../weights/opus-mt-en-hi/tokenizer.json"
         },
         {
           "name": "tokenizer_config.json",
           "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/tokenizer_config.json",
-          "path": "./weights/opus-mt-en-hi/tokenizer_config.json"
+          "path": "../weights/opus-mt-en-hi/tokenizer_config.json"
         },
         {
           "name": "generation_config.json",
           "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/generation_config.json",
-          "path": "./weights/opus-mt-en-hi/generation_config.json"
+          "path": "../weights/opus-mt-en-hi/generation_config.json"
         },
         {
           "name": "vocab.json",
           "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/vocab.json",
-          "path": "./weights/opus-mt-en-hi/vocab.json"
+          "path": "../weights/opus-mt-en-hi/vocab.json"
         },
         {
           "name": "special_tokens_map.json",
           "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/special_tokens_map.json",
-          "path": "./weights/opus-mt-en-hi/special_tokens_map.json"
+          "path": "../weights/opus-mt-en-hi/special_tokens_map.json"
         },
         {
           "name": "encoder_model_quantized.onnx",
           "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/onnx/encoder_model_quantized.onnx",
-          "path": "./weights/opus-mt-en-hi/encoder_model_quantized.onnx"
+          "path": "../weights/opus-mt-en-hi/encoder_model_quantized.onnx"
         },
         {
           "name": "decoder_model_merged_quantized.onnx",
           "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/onnx/decoder_model_merged_quantized.onnx",
-          "path": "./weights/opus-mt-en-hi/decoder_model_merged_quantized.onnx"
+          "path": "../weights/opus-mt-en-hi/decoder_model_merged_quantized.onnx"
         }
       ]
     },
@@ -247,42 +247,42 @@
         {
           "name": "config.json",
           "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/config.json",
-          "path": "./weights/opus-mt-en-es/config.json"
+          "path": "../weights/opus-mt-en-es/config.json"
         },
         {
           "name": "tokenizer.json",
           "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/tokenizer.json",
-          "path": "./weights/opus-mt-en-es/tokenizer.json"
+          "path": "../weights/opus-mt-en-es/tokenizer.json"
         },
         {
           "name": "tokenizer_config.json",
           "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/tokenizer_config.json",
-          "path": "./weights/opus-mt-en-es/tokenizer_config.json"
+          "path": "../weights/opus-mt-en-es/tokenizer_config.json"
         },
         {
           "name": "generation_config.json",
           "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/generation_config.json",
-          "path": "./weights/opus-mt-en-es/generation_config.json"
+          "path": "../weights/opus-mt-en-es/generation_config.json"
         },
         {
           "name": "vocab.json",
           "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/vocab.json",
-          "path": "./weights/opus-mt-en-es/vocab.json"
+          "path": "../weights/opus-mt-en-es/vocab.json"
         },
         {
           "name": "special_tokens_map.json",
           "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/special_tokens_map.json",
-          "path": "./weights/opus-mt-en-es/special_tokens_map.json"
+          "path": "../weights/opus-mt-en-es/special_tokens_map.json"
         },
         {
           "name": "encoder_model_quantized.onnx",
           "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/onnx/encoder_model_quantized.onnx",
-          "path": "./weights/opus-mt-en-es/encoder_model_quantized.onnx"
+          "path": "../weights/opus-mt-en-es/encoder_model_quantized.onnx"
         },
         {
           "name": "decoder_model_merged_quantized.onnx",
           "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/onnx/decoder_model_merged_quantized.onnx",
-          "path": "./weights/opus-mt-en-es/decoder_model_merged_quantized.onnx"
+          "path": "../weights/opus-mt-en-es/decoder_model_merged_quantized.onnx"
         }
       ]
     },
@@ -298,37 +298,37 @@
         {
           "name": "config.json",
           "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/config.json",
-          "path": "./weights/vit-gpt2-image-captioning/config.json"
+          "path": "../weights/vit-gpt2-image-captioning/config.json"
         },
         {
           "name": "preprocessor_config.json",
           "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/preprocessor_config.json",
-          "path": "./weights/vit-gpt2-image-captioning/preprocessor_config.json"
+          "path": "../weights/vit-gpt2-image-captioning/preprocessor_config.json"
         },
         {
           "name": "tokenizer.json",
           "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer.json",
-          "path": "./weights/vit-gpt2-image-captioning/tokenizer.json"
+          "path": "../weights/vit-gpt2-image-captioning/tokenizer.json"
         },
         {
           "name": "tokenizer_config.json",
           "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer_config.json",
-          "path": "./weights/vit-gpt2-image-captioning/tokenizer_config.json"
+          "path": "../weights/vit-gpt2-image-captioning/tokenizer_config.json"
         },
         {
           "name": "generation_config.json",
           "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/generation_config.json",
-          "path": "./weights/vit-gpt2-image-captioning/generation_config.json"
+          "path": "../weights/vit-gpt2-image-captioning/generation_config.json"
         },
         {
           "name": "encoder_model_quantized.onnx",
           "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/onnx/encoder_model_quantized.onnx",
-          "path": "./weights/vit-gpt2-image-captioning/onnx/encoder_model_quantized.onnx"
+          "path": "../weights/vit-gpt2-image-captioning/onnx/encoder_model_quantized.onnx"
         },
         {
           "name": "decoder_model_merged_quantized.onnx",
           "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/onnx/decoder_model_merged_quantized.onnx",
-          "path": "./weights/vit-gpt2-image-captioning/onnx/decoder_model_merged_quantized.onnx"
+          "path": "../weights/vit-gpt2-image-captioning/onnx/decoder_model_merged_quantized.onnx"
         }
       ]
     },
@@ -344,7 +344,7 @@
         {
           "name": "eng.traineddata",
           "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/eng.traineddata",
-          "path": "./tessdata/eng.traineddata"
+          "path": "../tessdata/eng.traineddata"
         }
       ]
     },
@@ -360,7 +360,7 @@
         {
           "name": "hin.traineddata",
           "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/hin.traineddata",
-          "path": "./tessdata/hin.traineddata"
+          "path": "../tessdata/hin.traineddata"
         }
       ]
     },
@@ -376,7 +376,7 @@
         {
           "name": "ben.traineddata",
           "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/ben.traineddata",
-          "path": "./tessdata/ben.traineddata"
+          "path": "../tessdata/ben.traineddata"
         }
       ]
     },
@@ -392,7 +392,7 @@
         {
           "name": "tam.traineddata",
           "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/tam.traineddata",
-          "path": "./tessdata/tam.traineddata"
+          "path": "../tessdata/tam.traineddata"
         }
       ]
     },
@@ -408,7 +408,7 @@
         {
           "name": "tel.traineddata",
           "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/tel.traineddata",
-          "path": "./tessdata/tel.traineddata"
+          "path": "../tessdata/tel.traineddata"
         }
       ]
     },
@@ -424,7 +424,7 @@
         {
           "name": "mar.traineddata",
           "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/mar.traineddata",
-          "path": "./tessdata/mar.traineddata"
+          "path": "../tessdata/mar.traineddata"
         }
       ]
     },
@@ -440,7 +440,7 @@
         {
           "name": "guj.traineddata",
           "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/guj.traineddata",
-          "path": "./tessdata/guj.traineddata"
+          "path": "../tessdata/guj.traineddata"
         }
       ]
     },
@@ -456,32 +456,32 @@
         {
           "name": "config.json",
           "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/config.json",
-          "path": "./weights/distilbert-mnli/config.json"
+          "path": "../weights/distilbert-mnli/config.json"
         },
         {
           "name": "tokenizer.json",
           "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/tokenizer.json",
-          "path": "./weights/distilbert-mnli/tokenizer.json"
+          "path": "../weights/distilbert-mnli/tokenizer.json"
         },
         {
           "name": "tokenizer_config.json",
           "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/tokenizer_config.json",
-          "path": "./weights/distilbert-mnli/tokenizer_config.json"
+          "path": "../weights/distilbert-mnli/tokenizer_config.json"
         },
         {
           "name": "vocab.txt",
           "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/vocab.txt",
-          "path": "./weights/distilbert-mnli/vocab.txt"
+          "path": "../weights/distilbert-mnli/vocab.txt"
         },
         {
           "name": "special_tokens_map.json",
           "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/special_tokens_map.json",
-          "path": "./weights/distilbert-mnli/special_tokens_map.json"
+          "path": "../weights/distilbert-mnli/special_tokens_map.json"
         },
         {
           "name": "model_quantized.onnx",
           "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/onnx/model_quantized.onnx",
-          "path": "./weights/distilbert-mnli/onnx/model_quantized.onnx"
+          "path": "../weights/distilbert-mnli/onnx/model_quantized.onnx"
         }
       ]
     },
@@ -497,32 +497,32 @@
         {
           "name": "config.json",
           "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/config.json",
-          "path": "./weights/all-minilm-l6-v2/config.json"
+          "path": "../weights/all-minilm-l6-v2/config.json"
         },
         {
           "name": "tokenizer.json",
           "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/tokenizer.json",
-          "path": "./weights/all-minilm-l6-v2/tokenizer.json"
+          "path": "../weights/all-minilm-l6-v2/tokenizer.json"
         },
         {
           "name": "tokenizer_config.json",
           "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json",
-          "path": "./weights/all-minilm-l6-v2/tokenizer_config.json"
+          "path": "../weights/all-minilm-l6-v2/tokenizer_config.json"
         },
         {
           "name": "vocab.txt",
           "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/vocab.txt",
-          "path": "./weights/all-minilm-l6-v2/vocab.txt"
+          "path": "../weights/all-minilm-l6-v2/vocab.txt"
         },
         {
           "name": "special_tokens_map.json",
           "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/special_tokens_map.json",
-          "path": "./weights/all-minilm-l6-v2/special_tokens_map.json"
+          "path": "../weights/all-minilm-l6-v2/special_tokens_map.json"
         },
         {
           "name": "model_quantized.onnx",
           "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/onnx/model_quantized.onnx",
-          "path": "./weights/all-minilm-l6-v2/onnx/model_quantized.onnx"
+          "path": "../weights/all-minilm-l6-v2/onnx/model_quantized.onnx"
         }
       ]
     }

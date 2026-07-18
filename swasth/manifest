@@ -1,0 +1,608 @@
+{
+  "body": {
+    "schema": 1,
+    "appId": "swasth",
+    "generatedAt": 1784343098248,
+    "ttlSeconds": 31536000,
+    "packs": [
+      {
+        "id": "core-text",
+        "version": "1.2.0",
+        "title": "Core text",
+        "description": "Writing assistant and smart replies. Runs entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 2048,
+        "model": "Xenova/LaMini-Flan-T5-77M",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/config.json",
+            "bytes": 1537,
+            "sha256": "0d7bf6d62e50e6457ac12a159eb81f9d8e6f84cc06f55b73c6d9668924def2f6"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/tokenizer.json",
+            "bytes": 2422262,
+            "sha256": "c33c0ac0bab6140edc14bee9571fedb1a10e768e5f9f6f95ae3ddce45c9b4f6e"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/tokenizer_config.json",
+            "bytes": 2457,
+            "sha256": "40751e9b2c178b7aea1214003345a8a21f29946a817b987a56925883651ca766"
+          },
+          {
+            "name": "generation_config.json",
+            "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/generation_config.json",
+            "bytes": 147,
+            "sha256": "489e064f497b61ac030b1af4f0f45cacf7db412dc0b868764ba4e94a1875fb6f"
+          },
+          {
+            "name": "encoder_model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/onnx/encoder_model_quantized.onnx",
+            "bytes": 35759128,
+            "sha256": "0239455518e19108a1dd3f1ab9e86929dd09235a42c51b06c00c8904708a11fc"
+          },
+          {
+            "name": "decoder_model_merged_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/onnx/decoder_model_merged_quantized.onnx",
+            "bytes": 59339330,
+            "sha256": "bee6285135afeb65b194601b94355b2d84bd8a9f2c5a23cac6c7ddafe6983a38"
+          }
+        ]
+      },
+      {
+        "id": "speech",
+        "version": "1.0.0",
+        "title": "Speech to text",
+        "description": "Transcribe voice notes on device (multilingual). Runs entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 3072,
+        "model": "Xenova/whisper-base",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/config.json",
+            "bytes": 2248,
+            "sha256": "67d8f6038a6d00d8fff5dc536666c5fd29cdb07b34f054bf829e66ef279ef36f"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/tokenizer.json",
+            "bytes": 2480466,
+            "sha256": "2c03294bf66b09198fb208ecb9da522d38b332248f315f835df5401a88bccfdd"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/tokenizer_config.json",
+            "bytes": 282683,
+            "sha256": "bafa49b0d052895d39390b2e8dd106729d39c04e3237edd263c84214a7edc841"
+          },
+          {
+            "name": "preprocessor_config.json",
+            "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/preprocessor_config.json",
+            "bytes": 339,
+            "sha256": "a03ee3825520946dd37cb6a7a003b965d1b6024e4fe4877db3c510ea95d6e0a0"
+          },
+          {
+            "name": "generation_config.json",
+            "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/generation_config.json",
+            "bytes": 3776,
+            "sha256": "e05ab0bba5f38c1d5f63b0d37fe1353ea12a507d1d973f618f0d3c3237a6c15d"
+          },
+          {
+            "name": "encoder_model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/onnx/encoder_model_quantized.onnx",
+            "bytes": 23200850,
+            "sha256": "1df9e7e8d58ba3df2b58c6e9aa58df388bb0dfb783937d8f75ff9386fa0b4a99"
+          },
+          {
+            "name": "decoder_model_merged_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/whisper-base/resolve/main/onnx/decoder_model_merged_quantized.onnx",
+            "bytes": 53707539,
+            "sha256": "b9f0d1fda4d69fdc5568b87bd4f6f6ffa66f16c8c2ec64de3dee62c4715fb439"
+          }
+        ]
+      },
+      {
+        "id": "tts-en",
+        "version": "1.0.0",
+        "title": "Read aloud (English)",
+        "description": "Hear a message spoken, on device (English). Runs entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 2048,
+        "model": "Xenova/mms-tts-eng",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/config.json",
+            "bytes": 1656,
+            "sha256": "5e9e7d12679a47e93af15aeb2b235e3604f2967dca8242ec75725434442c7824"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/tokenizer.json",
+            "bytes": 2107,
+            "sha256": "ad6614c664b37aa3bcdd0e2a4963f3a50c034b40e3d0db46327b1fb5b1694749"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/tokenizer_config.json",
+            "bytes": 623,
+            "sha256": "2b67a87a23aca04dc43254799881ef0e12d06b66f4f0a0ba6b264556adc2f491"
+          },
+          {
+            "name": "vocab.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/vocab.json",
+            "bytes": 413,
+            "sha256": "cb2a206ad823f474b0689961ddd68bfa38fa60611e4137cfc367f51216c570fb"
+          },
+          {
+            "name": "special_tokens_map.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/special_tokens_map.json",
+            "bytes": 47,
+            "sha256": "2925878f1e4459e69a68b78970003bd6cbdd4f77b6c4a85f113a49daba237a96"
+          },
+          {
+            "name": "added_tokens.json",
+            "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/added_tokens.json",
+            "bytes": 18,
+            "sha256": "aa4f68ab17a0c30139bb4598c7a7cb1f6674d51154e6c9f905c43574f50b8885"
+          },
+          {
+            "name": "model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/mms-tts-eng/resolve/main/onnx/model_quantized.onnx",
+            "bytes": 38361643,
+            "sha256": "4951b84b1a9957e0b4f199210e4a0c6f4ab4cf021ac3788e6576c383c9333f6d"
+          }
+        ]
+      },
+      {
+        "id": "translate-mul-en",
+        "version": "1.0.0",
+        "title": "Translate: any → English",
+        "description": "Translate messages from many languages into English, on device.",
+        "runtime": "wasm",
+        "minRamMb": 3072,
+        "model": "Xenova/opus-mt-mul-en",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/config.json",
+            "bytes": 1390,
+            "sha256": "8291285235226a7006e59cc343d15bc09b2d32f47f89da3c4e4ab935722cf660"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/tokenizer.json",
+            "bytes": 6089424,
+            "sha256": "5d108f3f6f0c51954432edb478f4c493fb3524adaa2c1e8a5c8c9a1f6b1ec7ff"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/tokenizer_config.json",
+            "bytes": 282,
+            "sha256": "829b813895861e8c28bad1066934eb5bac616db4fb64ba299551476d289f919e"
+          },
+          {
+            "name": "generation_config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/generation_config.json",
+            "bytes": 293,
+            "sha256": "fca98551a13f1337f71df7200e6ee6937550700de1e4853c4173132f4adccf7e"
+          },
+          {
+            "name": "vocab.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/vocab.json",
+            "bytes": 1552293,
+            "sha256": "3d34059a8671708d13bedebf67d12338e969dda68e927588950676de33a613fb"
+          },
+          {
+            "name": "special_tokens_map.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/special_tokens_map.json",
+            "bytes": 74,
+            "sha256": "61ee1e4c0e92f5b27d41fa66ceef05b16b4afafb34c550dffbf3e26354c076a7"
+          },
+          {
+            "name": "encoder_model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/onnx/encoder_model_quantized.onnx",
+            "bytes": 52475294,
+            "sha256": "48c3cad6c7664fd5d9ebe52a2d5d394ef2adeefbbf439c53f600b901cb974aed"
+          },
+          {
+            "name": "decoder_model_merged_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/opus-mt-mul-en/resolve/main/onnx/decoder_model_merged_quantized.onnx",
+            "bytes": 59785040,
+            "sha256": "0f13e53175cf87f10f3ab0c271e4dbfd73d281fc4306f9401892f5033f28e9ea"
+          }
+        ]
+      },
+      {
+        "id": "translate-en-hi",
+        "version": "1.0.0",
+        "title": "Translate: English → Hindi",
+        "description": "Translate your English messages into Hindi, on device.",
+        "runtime": "wasm",
+        "minRamMb": 3072,
+        "model": "Xenova/opus-mt-en-hi",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/config.json",
+            "bytes": 1389,
+            "sha256": "6d29d4ec94db8a9d872e6bd8b978d14d5164d81a48e75afe8bb6aa105093d38c"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/tokenizer.json",
+            "bytes": 6679560,
+            "sha256": "fdc33f73c560bd84f9dfcb1e8638e15b5c0b482b9f8c45d9b59917591fc970a8"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/tokenizer_config.json",
+            "bytes": 282,
+            "sha256": "f408731a3da7b6c819b7c41603e1be9b5926fec4eb885d31fcd721a2090f71b0"
+          },
+          {
+            "name": "generation_config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/generation_config.json",
+            "bytes": 293,
+            "sha256": "d770a432d949500a61ebc6b081c2a9f9be7a247c954b5e7632733e82a5d10f7b"
+          },
+          {
+            "name": "vocab.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/vocab.json",
+            "bytes": 2221738,
+            "sha256": "d0905d1c4d54cf91d1c44612e80db300c56cf66aa0165a860d7f2ab28edaa829"
+          },
+          {
+            "name": "special_tokens_map.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/special_tokens_map.json",
+            "bytes": 74,
+            "sha256": "61ee1e4c0e92f5b27d41fa66ceef05b16b4afafb34c550dffbf3e26354c076a7"
+          },
+          {
+            "name": "encoder_model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/onnx/encoder_model_quantized.onnx",
+            "bytes": 51337630,
+            "sha256": "53645fde96de098a58982d13f29ea24252a33ae4e9a10c7f84a2cceab4a2593e"
+          },
+          {
+            "name": "decoder_model_merged_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-hi/resolve/main/onnx/decoder_model_merged_quantized.onnx",
+            "bytes": 58638488,
+            "sha256": "79fc3eabceb473b13db2b6e25e7ebe7b4669526608a82147de4248f8c7e82e71"
+          }
+        ]
+      },
+      {
+        "id": "translate-en-es",
+        "version": "1.0.0",
+        "title": "Translate: English → Spanish",
+        "description": "Translate your English messages into Spanish, on device.",
+        "runtime": "wasm",
+        "minRamMb": 3072,
+        "model": "Xenova/opus-mt-en-es",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/config.json",
+            "bytes": 1468,
+            "sha256": "40b5f1a4942646df15237edd946ec70fafaaf5e2c129f414c3072e82e6184595"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/tokenizer.json",
+            "bytes": 6262682,
+            "sha256": "b802aaefad8865eed94f3c71182856128ca0e485680045cf4819d402ac74053c"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/tokenizer_config.json",
+            "bytes": 282,
+            "sha256": "743056968462e52dc9bc659b0fc6db3f37cf06da18a2b80525307500c867f70a"
+          },
+          {
+            "name": "generation_config.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/generation_config.json",
+            "bytes": 293,
+            "sha256": "60ddd81a85bbad24ef0541ef68e586b56c70aa2982ecb0d0731a53b23f9790ca"
+          },
+          {
+            "name": "vocab.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/vocab.json",
+            "bytes": 1720044,
+            "sha256": "aa3217e243dce8bcde26dbc222d966837ac35ce091677e9e1e109f4b42f269df"
+          },
+          {
+            "name": "special_tokens_map.json",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/special_tokens_map.json",
+            "bytes": 74,
+            "sha256": "61ee1e4c0e92f5b27d41fa66ceef05b16b4afafb34c550dffbf3e26354c076a7"
+          },
+          {
+            "name": "encoder_model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/onnx/encoder_model_quantized.onnx",
+            "bytes": 52899742,
+            "sha256": "8a60b02899b230c32411b4d87802fd27911b37690533b64bc31e2a1442368b49"
+          },
+          {
+            "name": "decoder_model_merged_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/opus-mt-en-es/resolve/main/onnx/decoder_model_merged_quantized.onnx",
+            "bytes": 60212804,
+            "sha256": "2f6c599545875e6d3bc8bf490b6754260b6641f3969cc7a20e42fbe5167cb5d1"
+          }
+        ]
+      },
+      {
+        "id": "vision",
+        "version": "1.0.0",
+        "title": "Image understanding",
+        "description": "Short on-device image descriptions (accessibility). Runs entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 4096,
+        "model": "Xenova/vit-gpt2-image-captioning",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/config.json",
+            "bytes": 4888,
+            "sha256": "b71725cabf08daad7461c53caa63492b49646b7079728e95803283adb1918375"
+          },
+          {
+            "name": "preprocessor_config.json",
+            "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/preprocessor_config.json",
+            "bytes": 378,
+            "sha256": "49c9db6ba2bca85343bfc0ce9c89f6db25d24b7c619f35fe138e0f3200ce7e49"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer.json",
+            "bytes": 2107928,
+            "sha256": "2f8f67b3b01f2c0287f16e52818aa96636eeb2105787e5ff3374198177a104b0"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/tokenizer_config.json",
+            "bytes": 456,
+            "sha256": "7b11daab99178470575513f3755bed10d349f961b508e5a4605e7aaf08815e55"
+          },
+          {
+            "name": "generation_config.json",
+            "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/generation_config.json",
+            "bytes": 184,
+            "sha256": "8d9dc9c48a7805aafbce1c253cdb1df96e7087bc5f17902de82aa4eb012e5b82"
+          },
+          {
+            "name": "encoder_model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/onnx/encoder_model_quantized.onnx",
+            "bytes": 87453213,
+            "sha256": "9617548d9c4258914e277535aeda6b0ce7019b1d77a6ad5ea9cbd5c6e4470a78"
+          },
+          {
+            "name": "decoder_model_merged_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/vit-gpt2-image-captioning/resolve/main/onnx/decoder_model_merged_quantized.onnx",
+            "bytes": 158599996,
+            "sha256": "023d013388227d5ce52f102ab94cc1781fccbbdfaaf172e21f24905046e6f716"
+          }
+        ]
+      },
+      {
+        "id": "ocr-eng",
+        "version": "1.0.0",
+        "title": "Text recognition — English",
+        "description": "Read English text out of photos and scans, entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 1024,
+        "model": "tesseract/eng",
+        "files": [
+          {
+            "name": "eng.traineddata",
+            "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/eng.traineddata",
+            "bytes": 5199098,
+            "sha256": "2a524ec533fb770b5cc43bfb56ec041d4c9d8c8aba7204b4b39bdd9774215c6d"
+          }
+        ]
+      },
+      {
+        "id": "ocr-hin",
+        "version": "1.0.0",
+        "title": "Text recognition — Hindi",
+        "description": "Read Hindi text out of photos and scans, entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 1024,
+        "model": "tesseract/hin",
+        "files": [
+          {
+            "name": "hin.traineddata",
+            "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/hin.traineddata",
+            "bytes": 1651097,
+            "sha256": "2dc89426c88511934198dc57743bd23796a26ae166e5e800e93513916b74a0e0"
+          }
+        ]
+      },
+      {
+        "id": "ocr-ben",
+        "version": "1.0.0",
+        "title": "Text recognition — Bengali",
+        "description": "Read Bengali text out of photos and scans, entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 1024,
+        "model": "tesseract/ben",
+        "files": [
+          {
+            "name": "ben.traineddata",
+            "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/ben.traineddata",
+            "bytes": 1789844,
+            "sha256": "2f897ea1c498f64edae2011e1594e151ea547c19e5488ed30964b54061eb5fa4"
+          }
+        ]
+      },
+      {
+        "id": "ocr-tam",
+        "version": "1.0.0",
+        "title": "Text recognition — Tamil",
+        "description": "Read Tamil text out of photos and scans, entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 1024,
+        "model": "tesseract/tam",
+        "files": [
+          {
+            "name": "tam.traineddata",
+            "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/tam.traineddata",
+            "bytes": 3353494,
+            "sha256": "59dea6c14cf735936adc47a0aedb657e46bf7f81ea2b350ea2439c87c888613c"
+          }
+        ]
+      },
+      {
+        "id": "ocr-tel",
+        "version": "1.0.0",
+        "title": "Text recognition — Telugu",
+        "description": "Read Telugu text out of photos and scans, entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 1024,
+        "model": "tesseract/tel",
+        "files": [
+          {
+            "name": "tel.traineddata",
+            "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/tel.traineddata",
+            "bytes": 3315613,
+            "sha256": "a33213a6226edba2b84def02a8a3be11651549dc9717b520dad308c296369c0a"
+          }
+        ]
+      },
+      {
+        "id": "ocr-mar",
+        "version": "1.0.0",
+        "title": "Text recognition — Marathi",
+        "description": "Read Marathi text out of photos and scans, entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 1024,
+        "model": "tesseract/mar",
+        "files": [
+          {
+            "name": "mar.traineddata",
+            "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/mar.traineddata",
+            "bytes": 3193203,
+            "sha256": "8f82dcd168c51f8cbc853aeaa454d87707c653b567b774df81b9742bf88ff76c"
+          }
+        ]
+      },
+      {
+        "id": "ocr-guj",
+        "version": "1.0.0",
+        "title": "Text recognition — Gujarati",
+        "description": "Read Gujarati text out of photos and scans, entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 1024,
+        "model": "tesseract/guj",
+        "files": [
+          {
+            "name": "guj.traineddata",
+            "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/guj.traineddata",
+            "bytes": 1963204,
+            "sha256": "feb74543fd155bd68ebd604080dd1de221f6e670668dc2c24edd010fb2e8321c"
+          }
+        ]
+      },
+      {
+        "id": "classify",
+        "version": "1.0.0",
+        "title": "Smart classification",
+        "description": "Better label suggestions and spam detection. Runs entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 2048,
+        "model": "Xenova/distilbert-base-uncased-mnli",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/config.json",
+            "bytes": 753,
+            "sha256": "56da382081e4685a67c46724b857be63ecc8aab9cb13804773ee524ff63c1682"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/tokenizer.json",
+            "bytes": 711396,
+            "sha256": "415bb076b9167233bff3c6108c22b25c1a01e17ed79b920214b9f8b3d67321c7"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/tokenizer_config.json",
+            "bytes": 372,
+            "sha256": "04c20c4691aaf4ebbe62df486f01f5de233583a969dac30c50e7eb7f3134e81b"
+          },
+          {
+            "name": "vocab.txt",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/vocab.txt",
+            "bytes": 231508,
+            "sha256": "0d26b6769eeb4cb3158099cdb430d085a877dd7f254f44828d6617131e7bebcd"
+          },
+          {
+            "name": "special_tokens_map.json",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/special_tokens_map.json",
+            "bytes": 125,
+            "sha256": "0e84ec2a99f0965e6d0a32aebc99cd4c75f6d8e051d80d00cb18fe582ecda128"
+          },
+          {
+            "name": "model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/distilbert-base-uncased-mnli/resolve/main/onnx/model_quantized.onnx",
+            "bytes": 67581975,
+            "sha256": "142c521d46d5f42045a2f855fbc8e6a650bd452f0afc6237ba0072d6b7afbc8a"
+          }
+        ]
+      },
+      {
+        "id": "embeddings",
+        "version": "1.0.0",
+        "title": "Search by meaning",
+        "description": "Semantic search and the memory assistant. Builds a sealed on-device index; nothing leaves your device.",
+        "runtime": "wasm",
+        "minRamMb": 1024,
+        "model": "Xenova/all-MiniLM-L6-v2",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/config.json",
+            "bytes": 650,
+            "sha256": "3249c53fe00e1737ce8139ed5c5fa1a2beeab9ff64e06300100aa9b6f8ceb914"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/tokenizer.json",
+            "bytes": 711661,
+            "sha256": "86b112241e2d008d089603e22ef8215df16500acebbf404def92d068b7d4943a"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json",
+            "bytes": 366,
+            "sha256": "573ba8e4917b362375d2449275b9f8bc1aafd0012f0dbf5d6a4261b4d157d643"
+          },
+          {
+            "name": "vocab.txt",
+            "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/vocab.txt",
+            "bytes": 231508,
+            "sha256": "0d26b6769eeb4cb3158099cdb430d085a877dd7f254f44828d6617131e7bebcd"
+          },
+          {
+            "name": "special_tokens_map.json",
+            "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/special_tokens_map.json",
+            "bytes": 125,
+            "sha256": "0e84ec2a99f0965e6d0a32aebc99cd4c75f6d8e051d80d00cb18fe582ecda128"
+          },
+          {
+            "name": "model_quantized.onnx",
+            "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/onnx/model_quantized.onnx",
+            "bytes": 22972370,
+            "sha256": "a7f04b7082d8cbf7303d6ac6707b401aa891080fd9dd6ff2eb5e7f3d6939ad9b"
+          }
+        ]
+      }
+    ]
+  },
+  "signature": "ujTud2LyM9ypyfzW0AWXwFGUZgJBzKRuYjIAv1PhIv_dwbK1w5TlSJVJAUfDihzvufg2pOsMV704DgBRQQS5AA",
+  "keyId": "orgoai-2026"
+}
