@@ -349,6 +349,24 @@
       ]
     },
     {
+      "id": "text-desktop-7b",
+      "version": "1.0.0",
+      "title": "Desktop text model (large)",
+      "description": "The largest writing model for the desktop app (Qwen2.5-7B). Noticeably better at long-form writing and following instructions. Runs natively on your device.",
+      "runtime": "native",
+      "minRamMb": 8192,
+      "minCpuCores": 6,
+      "deviceClass": "desktop",
+      "model": "bartowski/Qwen2.5-7B-Instruct-GGUF",
+      "files": [
+        {
+          "name": "Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+          "url": "https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+          "path": "./weights/qwen2.5-7b/Qwen2.5-7B-Instruct-Q4_K_M.gguf"
+        }
+      ]
+    },
+    {
       "id": "vision",
       "version": "1.0.0",
       "title": "Image understanding",

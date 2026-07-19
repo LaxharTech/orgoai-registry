@@ -2,7 +2,7 @@
   "body": {
     "schema": 1,
     "appId": "orgochat",
-    "generatedAt": 1784380528713,
+    "generatedAt": 1784479463613,
     "ttlSeconds": 31536000,
     "packs": [
       {
@@ -406,6 +406,25 @@
         ]
       },
       {
+        "id": "text-desktop-7b",
+        "version": "1.0.0",
+        "title": "Desktop text model (large)",
+        "description": "The largest writing model for the desktop app (Qwen2.5-7B). Noticeably better at long-form writing and following instructions. Runs natively on your device.",
+        "runtime": "native",
+        "minRamMb": 8192,
+        "minCpuCores": 6,
+        "deviceClass": "desktop",
+        "model": "bartowski/Qwen2.5-7B-Instruct-GGUF",
+        "files": [
+          {
+            "name": "Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+            "url": "https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+            "bytes": 4683074240,
+            "sha256": "60622433447f736d09012580c3c1c2c2595299809c768f3a2fff0ef84a144e52"
+          }
+        ]
+      },
+      {
         "id": "vision",
         "version": "1.0.0",
         "title": "Image understanding",
@@ -673,6 +692,6 @@
       }
     ]
   },
-  "signature": "_-iXE4iaDISVs1Ee_S0tQA962gApf4U7BQhXkSFzBpP_20CAZ-lrQnWKINt19Pt6FZWG4Zk5QObQSewmM3sKBA",
+  "signature": "T57J7TUDnaJdIhUM361g106KZV8yzs0Vg8cdWY4oLiTYgxvIxSKkbeW3LF_KulS4W4XTDkf2HVoDe8PfTCOhAA",
   "keyId": "orgoai-2026"
 }
