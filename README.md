@@ -9,6 +9,7 @@ refuses every other app's manifest:
 | OrgoChat | `packs.json` (root)  | `https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/manifest` |
 | Swasth   | `swasth/packs.json`  | `.../main/swasth/manifest`                                                |
 | Kridax   | `kridax/packs.json`  | `.../main/kridax/manifest`                                                |
+| Sentorg  | `sentorg/packs.json` | `.../main/sentorg/manifest` (OL.6.2: core-text 77M web pack, browser tier) |                                                |
 
 Subdirectory catalogs reference the shared root `weights/` via `path: '../weights/...'`.
 
