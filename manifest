@@ -2,7 +2,7 @@
   "body": {
     "schema": 1,
     "appId": "orgochat",
-    "generatedAt": 1784479463613,
+    "generatedAt": 1784582652480,
     "ttlSeconds": 31536000,
     "packs": [
       {
@@ -689,9 +689,74 @@
             "sha256": "a7f04b7082d8cbf7303d6ac6707b401aa891080fd9dd6ff2eb5e7f3d6939ad9b"
           }
         ]
+      },
+      {
+        "id": "vision-qa",
+        "version": "1.0.0",
+        "title": "Ask about images",
+        "description": "Answer a question about a photo or document — what a receipt totals, what a certificate says — entirely on your device. Reads meaning, not exact serial numbers: for character-exact IDs use text recognition.",
+        "runtime": "wasm",
+        "minRamMb": 4096,
+        "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+        "files": [
+          {
+            "name": "config.json",
+            "url": "https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct/resolve/main/config.json",
+            "bytes": 7339,
+            "sha256": "3984a4d1981fef3cadedb6be6c54bb5608556a7415c3dcd59b711f3c1e363128"
+          },
+          {
+            "name": "generation_config.json",
+            "url": "https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct/resolve/main/generation_config.json",
+            "bytes": 136,
+            "sha256": "ed1328b42fb83e92c04b32cbe958d0f3f81212eaed7897a90bcfac4de24b323b"
+          },
+          {
+            "name": "preprocessor_config.json",
+            "url": "https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct/resolve/main/preprocessor_config.json",
+            "bytes": 486,
+            "sha256": "f642253a633d8a9d3c501f5f6475005f1a472d3cfb0d76c46e709c9ea8502aab"
+          },
+          {
+            "name": "processor_config.json",
+            "url": "https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct/resolve/main/processor_config.json",
+            "bytes": 68,
+            "sha256": "78f2ab7e389c27cf72ab1aa97a8158811bc99da784404693199c3ab7c0692a82"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "url": "https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct/resolve/main/tokenizer_config.json",
+            "bytes": 28249,
+            "sha256": "f908add8f75de0d23f1e3e54a309ccf41d5781907a92473bdac412e27214743a"
+          },
+          {
+            "name": "tokenizer.json",
+            "url": "https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct/resolve/main/tokenizer.json",
+            "bytes": 3548256,
+            "sha256": "88505e1a34e8e4b89945dfc4e31d3ea7e76f41879e772a8bee11ea67b69650e5"
+          },
+          {
+            "name": "decoder_model_merged_q4.onnx",
+            "url": "https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct/resolve/main/onnx/decoder_model_merged_q4.onnx",
+            "bytes": 229119140,
+            "sha256": "9b1e393fca6107a825b97917907d12c3b9b71cf71d42bad17824426b591b317a"
+          },
+          {
+            "name": "embed_tokens_fp16.onnx",
+            "url": "https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct/resolve/main/onnx/embed_tokens_fp16.onnx",
+            "bytes": 94617986,
+            "sha256": "7e0207baa2aff50551efe92356f31de7b8cce9cfee66d590a860a64fac711eae"
+          },
+          {
+            "name": "vision_encoder_quantized.onnx",
+            "url": "https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct/resolve/main/onnx/vision_encoder_quantized.onnx",
+            "bytes": 98966563,
+            "sha256": "e7a3b1a945362119886560a1fb80d51f69acb68c8594a62fb244ae0a2ee301de"
+          }
+        ]
       }
     ]
   },
-  "signature": "T57J7TUDnaJdIhUM361g106KZV8yzs0Vg8cdWY4oLiTYgxvIxSKkbeW3LF_KulS4W4XTDkf2HVoDe8PfTCOhAA",
+  "signature": "9NZrIkj4rSsuwPC3x4taBXhRJjWdnVy53Zd_Dqj7IL1_YWVDiGKyegqSDJGREpBbK01MU8lYRXJ8I_Q5wiuXCA",
   "keyId": "orgoai-2026"
 }
