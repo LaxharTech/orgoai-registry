@@ -2,7 +2,7 @@
   "body": {
     "schema": 1,
     "appId": "sentorg",
-    "generatedAt": 1784565166548,
+    "generatedAt": 1784569364005,
     "ttlSeconds": 31536000,
     "packs": [
       {
@@ -98,9 +98,26 @@
             "sha256": "a7f04b7082d8cbf7303d6ac6707b401aa891080fd9dd6ff2eb5e7f3d6939ad9b"
           }
         ]
+      },
+      {
+        "id": "ocr-eng",
+        "version": "1.0.0",
+        "title": "Read documents (English)",
+        "description": "Read printed text out of statutory documents and scans to help fill forms — entirely on your device.",
+        "runtime": "wasm",
+        "minRamMb": 1024,
+        "model": "tesseract/eng",
+        "files": [
+          {
+            "name": "eng.traineddata",
+            "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/tessdata/eng.traineddata",
+            "bytes": 5199098,
+            "sha256": "2a524ec533fb770b5cc43bfb56ec041d4c9d8c8aba7204b4b39bdd9774215c6d"
+          }
+        ]
       }
     ]
   },
-  "signature": "GM5AqWO_VYo3TluPJySxFhauud6CsyoKQa-3Z9v55-CJBQqIt61dy5DlPgTyJXd45MXqWuqhrRhg5BK8uD64Cg",
+  "signature": "kALDog3nVrdDmFvVM5Us4_XSXsFdulrusDNHs_fEv8-oXW3tXLnyG4-iyYUBwVyAGbZXgm3_ST7riT4cIIpeCQ",
   "keyId": "orgoai-2026"
 }
