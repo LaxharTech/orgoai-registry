@@ -1,0 +1,61 @@
+{
+  "packs": [
+    {
+      "id": "core-text",
+      "version": "1.0.0",
+      "title": "Guru \u2014 grounded answers",
+      "description": "Answers questions about the passage you are reading. Runs entirely on your device; nothing you ask leaves it.",
+      "runtime": "wasm",
+      "minRamMb": 2048,
+      "model": "Xenova/LaMini-Flan-T5-77M",
+      "files": [
+        {
+          "name": "config.json",
+          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/config.json",
+          "path": "../weights/config.json"
+        },
+        {
+          "name": "tokenizer.json",
+          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/tokenizer.json",
+          "path": "../weights/tokenizer.json"
+        },
+        {
+          "name": "tokenizer_config.json",
+          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/tokenizer_config.json",
+          "path": "../weights/tokenizer_config.json"
+        },
+        {
+          "name": "generation_config.json",
+          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/generation_config.json",
+          "path": "../weights/generation_config.json"
+        },
+        {
+          "name": "encoder_model_quantized.onnx",
+          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/onnx/encoder_model_quantized.onnx",
+          "path": "../weights/encoder_model_quantized.onnx"
+        },
+        {
+          "name": "decoder_model_merged_quantized.onnx",
+          "url": "https://huggingface.co/Xenova/LaMini-Flan-T5-77M/resolve/main/onnx/decoder_model_merged_quantized.onnx",
+          "path": "../weights/decoder_model_merged_quantized.onnx"
+        }
+      ]
+    },
+    {
+      "id": "syllabus-cbse-8-science",
+      "version": "1.0.0",
+      "title": "CBSE Class 8 Science \u2014 syllabus",
+      "description": "Lets the Guru answer from your chapters. Objectives and vocabulary only, about 3 KB.",
+      "runtime": "wasm",
+      "minRamMb": 512,
+      "model": "nalaani/syllabus-cbse-8-science",
+      "files": [
+        {
+          "name": "cbse-8-science-1.0.0.json",
+          "url": "https://raw.githubusercontent.com/LaxharTech/orgoai-registry/main/nalaani/syllabus/cbse-8-science-1.0.0.json",
+          "path": "./syllabus/cbse-8-science-1.0.0.json"
+        }
+      ]
+    }
+  ]
+}
